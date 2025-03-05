@@ -60,3 +60,86 @@ p {
     margin: 0 auto;
     padding: 0 20px;
 }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+nav {
+    display: inline-block;
+    width: 80%;
+}
+nav img {
+    width: 10%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.grid img {
+    width: 100%;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-between;
+    align-items: start;
+    row-gap: 15px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Default Mobile View (Already provided) */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .box {
+    width: 90%;
+  }
+  
+  /* Tablet View (Triggered at 772px) */
+  @media (min-width: 772px) {
+    .container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .box {
+      width: 45%;
+    }
+  
+    img {
+      max-height: 30vh;
+    }
+  }
+  
+  /* Large Screen View (Triggered at 998px) */
+  @media (min-width: 998px) {
+    .box {
+      width: 30%;
+    }
+  }
+  
